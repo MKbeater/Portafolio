@@ -15,46 +15,56 @@
 <body>
   <header>
     <div class="logo">
-      <img src="logo.png" alt="Logo de Librería Panda">
+      <img src="img/logo.png" alt="Logo de Librería Panda">
     </div>
     <h1>Librería Codigos Panda</h1>
   </header>
 
   <div class="container">
-    <div class="form-group">     
+    <div class="form-codigo">     
       <label for="codigo">Código principal:</label>
       <input type="text" id="codigo" class="form-control" required="">
       <label for="cantidad-packs">Cantidad de Packs:</label>
       <input type="number" id="cantidad-packs" class="form-control" value="1">
+
     </div>
     <div>
 
     </div>
 
 
-    <div id="subcodigosGroup" class="form-group">
+    <div id="subcodigosGroup" class="form-subcodigo">
       <div class="form-row">
         <div class="col-md-6">
           <label for="subcodigo1">Subcódigo 1:</label>
           <input type="text" id="subcodigo1" class="form-control subcodigo">
-        </div>
-        <div class="col-md-6">
           <label for="cantidadSubcodigo1">Cantidad:</label>
           <input type="number" id="cantidadSubcodigo1" class="form-control cantidad" min="1">
         </div>
       </div>
     </div>
+    <section class="botones">
 
-    <button id="agregarSubcodigo" class="btn btn-primary" onclick="agregarSubcodigos()">Agregar Subcódigo</button>
+      <button id="agregarSubcodigo" class="btn-accion" onclick="agregarSubcodigos()">Agregar Subcódigo</button>
 
-    <button id="agregarCodigo" class="btn btn-success" onclick="agregarCodigo()">Agregar Código</button>
-    <button id="mostrarLibreria" class="btn btn-info" onclick="mostrarLibreria()">Mostrar Librería</button>
-    <button id="calcularSubpares" class="btn btn-warning" onclick="calcularSubpares()">Calcular Subpares</button>
-    <button id="limpiarLibreria" class="btn btn-danger" onclick="limpiarLibreria()">Limpiar Librería</button>
+      <button id="agregarCodigo" class="btn-accion" onclick="agregarCodigo()">Agregar Código</button>
 
-    <button onclick="descargarBaseDeDatos()">Descargar Librería (Excel)</button>
+      <button id="actualizarCodigo" class="btn-danger" onclick="actualizarCodigo()">actualizar Codigo</button>
 
-    <div id="libreriaContainer" class="form-group">
+      <button id="calcularSubpares" class="btn-accion" onclick="calcularSubpares()">Calcular Subpares</button>
+
+      <button id="eliminarCodigo" class="btn-danger" onclick="eliminarCodigo()">Eliminar Codigo</button>
+
+      <button id="limpiarLibreria" class="btn btn-danger" onclick="limpiarLibreria()">Limpiar Librería</button>
+
+      <button id="mostrarLibreria" class="btn-info" onclick="mostrarLibreria()">Mostrar Librería</button>
+
+      <button id="descargarBaseDeDatos" class="btn-itc" onclick="descargarBaseDeDatos()">Descargar Librería (Excel)</button>
+
+      <button id="procesarDatosExcel" class="btn-itc" onclick="procesarDatosExcel()">Procesar Datos</button>
+
+  </section>
+    <div id="libreriaContainer" class="area-libreria">
       <label for="libreriaOutput">Librería:</label>
       <textarea id="libreriaOutput" class="form-control" readonly=""></textarea>
     </div>
@@ -66,8 +76,5 @@
 
 
   <script src="script.js"></script>
-  <script src="./Librería Panda_files/xlsx.full.min.js"></script>
-
 </body>
-
 </html>

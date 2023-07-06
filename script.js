@@ -232,21 +232,18 @@ function agregarSubcodigos() {
     subcodigoInput.classList.add('form-control', 'subcodigo');
     subcodigoDiv.appendChild(subcodigoInput);
   
-    const cantidadDiv = document.createElement('div');
-    cantidadDiv.classList.add('col-md-6');
-  
     const cantidadLabel = document.createElement('label');
     cantidadLabel.textContent = "Cantidad:";
-    cantidadDiv.appendChild(cantidadLabel);
+    subcodigoDiv.appendChild(cantidadLabel);
   
     const cantidadInput = document.createElement('input');
     cantidadInput.type = 'number';
     cantidadInput.classList.add('form-control', 'cantidad');
     cantidadInput.min = '1';
-    cantidadDiv.appendChild(cantidadInput);
+    subcodigoDiv.appendChild(cantidadInput);
   
     iteracion.appendChild(subcodigoDiv);
-    iteracion.appendChild(cantidadDiv);
+    iteracion.appendChild(subcodigoDiv);
   
     subcodigosGroup.appendChild(iteracion);
 } 
