@@ -1,0 +1,200 @@
+/* Reset.css */
+/* Aquí va el código del archivo Reset.css */
+
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #66CCFF, #FFF);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FFF;
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 20vw;
+  height: auto;
+}
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 2vw;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 2vw;
+}
+
+label {
+  display: block;
+  margin-bottom: 1vw;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 2vw;
+  border: 0.2vw solid #ccc;
+  border-radius: 1vw;
+  box-sizing: border-box;
+}
+
+.small-input {
+  width: 100%;
+  margin-bottom: 1vw;
+}
+
+textarea {
+  width: 100%;
+  height: 25vw;
+  padding: 2vw;
+  border: 0.2vw solid #ccc;
+  border-radius: 1vw;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 2vw 4vw;
+  margin-bottom: 1vw;
+  background-color: #333;
+  color: #FFF;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+}
+
+.btn-success {
+  background-color: #28A745;
+}
+
+.btn-info {
+  background-color: #17A2B8;
+}
+
+.btn-warning {
+  background-color: #FFC107;
+}
+
+.btn-danger {
+  background-color: #DC3545;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+
+footer {
+  background-color: #333;
+  color: #FFF;
+  padding: 2vw;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  header {
+    padding: 4vw;
+  }
+
+  .logo img {
+    max-width: 30vw;
+  }
+
+  .container {
+    max-width: 90vw;
+    padding: 4vw;
+  }
+
+  label {
+    margin-bottom: 2vw;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    padding: 4vw;
+    border-radius: 2vw;
+  }
+
+  textarea {
+    height: 40vw;
+    padding: 4vw;
+    border-radius: 2vw;
+  }
+
+  .btn {
+    padding: 4vw 8vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+  }
+
+  footer {
+    padding: 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 6vw;
+  }
+
+  .logo img {
+    max-width: 40vw;
+  }
+
+  .container {
+    max-width: 95vw;
+    padding: 6vw;
+  }
+
+  label {
+    margin-bottom: 3vw;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    padding: 6vw;
+    border-radius: 3vw;
+  }
+
+  textarea {
+    height: 50vw;
+    padding: 6vw;
+    border-radius: 3vw;
+  }
+
+  .btn {
+    padding: 6vw 10vw;
+    margin-bottom: 3vw;
+    border-radius: 3vw;
+  }
+
+  footer {
+    padding: 6vw;
+  }
+}

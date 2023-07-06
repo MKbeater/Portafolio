@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería Panda</title>
+  <link rel="stylesheet" href="reset.css" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo de Librería Panda">
+    </div>
+    <h1>Librería Codigos Panda</h1>
+  </header>
+
+  <div class="container">
+    <div class="form-group">     
+      <label for="codigo">Código principal:</label>
+      <input type="text" id="codigo" class="form-control" required="">
+      <label for="cantidad-packs">Cantidad de Packs:</label>
+      <input type="number" id="cantidad-packs" class="form-control" value="1">
+    </div>
+    <div>
+
+    </div>
+
+
+    <div id="subcodigosGroup" class="form-group">
+      <div class="form-row">
+        <div class="col-md-6">
+          <label for="subcodigo1">Subcódigo 1:</label>
+          <input type="text" id="subcodigo1" class="form-control subcodigo">
+        </div>
+        <div class="col-md-6">
+          <label for="cantidadSubcodigo1">Cantidad:</label>
+          <input type="number" id="cantidadSubcodigo1" class="form-control cantidad" min="1">
+        </div>
+      </div>
+    </div>
+
+    <button id="agregarSubcodigo" class="btn btn-primary" onclick="agregarSubcodigos()">Agregar Subcódigo</button>
+
+    <button id="agregarCodigo" class="btn btn-success" onclick="agregarCodigo()">Agregar Código</button>
+    <button id="mostrarLibreria" class="btn btn-info" onclick="mostrarLibreria()">Mostrar Librería</button>
+    <button id="calcularSubpares" class="btn btn-warning" onclick="calcularSubpares()">Calcular Subpares</button>
+    <button id="limpiarLibreria" class="btn btn-danger" onclick="limpiarLibreria()">Limpiar Librería</button>
+
+    <button onclick="descargarBaseDeDatos()">Descargar Librería (Excel)</button>
+
+    <div id="libreriaContainer" class="form-group">
+      <label for="libreriaOutput">Librería:</label>
+      <textarea id="libreriaOutput" class="form-control" readonly=""></textarea>
+    </div>
+  </div>
+
+  <footer>
+    <p>Todos los derechos reservados © Marco Prentice</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="./Librería Panda_files/xlsx.full.min.js"></script>
+
+</body>
+
+</html>
